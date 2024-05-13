@@ -8,5 +8,5 @@ sub test_vcl_recv {
 
   testing.call_subroutine("vcl_recv");
 
-  assert.equal(req.backend, M_ade_Up_backend1);
+  assert.equal(req.backend, M_ade_Up_backend2);
 }

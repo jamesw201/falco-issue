@@ -8,8 +8,7 @@ table backends BACKEND {
 
 sub vcl_recv {
 #FASTLY recv
-
-  set req.backend = table.lookup_backend(backends, req.http.host, M_ade_Up_backend1);
+  set req.backend = table.lookup_backend(backends, req.http.host, M_ade_Up_backend2);
 
   return(pass);
 }
